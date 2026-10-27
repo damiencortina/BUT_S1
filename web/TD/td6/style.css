@@ -1,0 +1,50 @@
+body {
+    color: red
+}
+
+a {
+    display: inline-block;
+    /* obligatoire : transform ne fonctionne pas sur un élément inline */
+    animation: tourner .25s linear infinite;
+}
+
+section {
+    animation: tourner2 .25s linear infinite;
+}
+
+body {
+    animation: coloooor .25s linear infinite;
+    transition: background-color .5s;
+}
+
+@keyframes tourner {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes tourner2 {
+    from {
+        transform: translateX(0px);
+        scale: 1;
+    }
+
+    to {
+        transform: translateX(600px);
+        scale: 2;
+    }
+}
+
+@keyframes coloooor {
+    from {
+        background-color: pink;
+    }
+
+    to {
+        background-color: blueviolet;
+    }
+}

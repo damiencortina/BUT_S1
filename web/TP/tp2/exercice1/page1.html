@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Attention, action et method sont obligatoires -->
+    <form action="page1.html" method="GET">
+        <fieldset>
+            <label for="id_nom">nom :</label>
+            <input type="text" name="nom" value="nom" id="id_nom">
+            <br>
+            <label for="id_pseudo">pseudo (login) :</label>
+            <input type="text" name="pseudo" value="" placeholder="entrer votre login" id="id_pseudo">
+            <br>
+            <label for="id_date">date naissance :</label>
+            <input type="date" name="date_naissance" id="id_date">
+            <br>
+            <label for="id_number">Points (between 1 and 3)</label>
+            <input type="range" name="number" id="id_number" max="3" step="0.01" value="1.5">
+            <br>
+            <label for="id_file">Fichier (photo)</label>
+            <input type="file" name="file" id="id_file">
+            <br>
+            <input type="hidden" name=cache value="2344">
+            <input type="submit" name="f1_valider" value="valider">
+        </fieldset>
+    </form>
+</body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TP2 : Création d'une nouvelle catégorie d'article</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.4/css/bulma.min.css">
+</head>
+
+<body>
+    <section class="hero is-link">
+        <div class="hero-body">
+            <h1 class="title">TP2</h1>
+            <h2 class="subtitle">Création d'une nouvelle catégorie d'article</h2>
+        </div>
+        <div class="hero-foot">
+            <nav class="tabs is-boxed is-fullwidth">
+                <div class="container">
+                    <ul>
+                        <li>
+                            <a href="../../tp3/exercice2/liste_article.html">Liste des articles</a>
+                        </li>
+                        <li>
+                            <a href="../../tp3/exercice2/list_type_article.html">Liste des catégories d'article</a>
+                        </li>
+                        <li>
+                            <a href="../../tp2/exercice3/form_article.html">Créer un article</a>
+                        </li>
+                        <li class="is-active">
+                            <a href="../../tp2/exercice3/form_type_article.html">Créer une catégorie d'article</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </section>
+    <div class="container">
+        <div class="section">
+            <div class="box">
+                <form action="form_type_article.html" method="GET">
+                    <fieldset>
+                        <input type="hidden" name="id">
+                        <div class="field">
+                            <label class="label" for="libelle">Libelle :</label>
+                            <div class="control">
+                                <input class="input" required type="text" name="libelle" id="libelle"
+                                    placeholder="Libelle de l'article">
+                            </div>
+                        </div>
+                        <div class="field is-grouped">
+                            <div class="control">
+                                <button class="button is-link" type="submit">Valider</button>
+                            </div>
+                        </div>
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

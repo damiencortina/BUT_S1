@@ -1,0 +1,1 @@
+print("quotient : " + str(2026//7) + " et reste : " + str(2026%7))

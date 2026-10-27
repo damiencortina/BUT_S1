@@ -1,0 +1,47 @@
+{% extends 'layout.html' %}
+
+{% block title %}
+<title>gestion des étudiants</title>
+{% endblock %}
+
+{% block body %}
+
+<div class="container py-4">
+    <h2 class="title">Formulaire étudiant</h2>
+
+    <form action="/etudiant/add" method="post">
+        <!-- Champ caché ID -->
+        <input type="hidden" name="id" value="1">
+
+        <!-- Nom -->
+        <div class="field">
+            <label for="nom" class="form-label">Nom</label>
+            <div class="control">
+                <input class="input" type="text" class="form-control" id="nom" name="nom" value="">
+            </div>
+        </div>
+</div>
+
+<!-- Groupe -->
+<div class="mb-3">
+    <label for="groupe" class="form-label">Groupe</label>
+    <div class="select">
+        <select class="form-select" id="groupe" name="id_groupe">
+            {% for groupe in groupes %}
+            {% if loop.first %}
+            <option value="{{groupe.name}}" selected>{{groupe.name}}</option>
+            {%else%}
+            <option value="{{groupe.name}}">{{groupe.name}}</option>
+            {%endif%}
+            {% endfor %}
+        </select>
+    </div>
+</div>
+
+<!-- Boutons -->
+<button class="button is-success" type="submit" class="btn btn-primary">Enregistrer</button>
+<button class="button is-link is-outlined" type="reset" class="btn btn-secondary">Réinitialiser</button>
+</form>
+</div>
+
+{% endblock %}

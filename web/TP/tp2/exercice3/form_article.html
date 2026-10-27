@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TP2 : Création d'un nouvel article</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.4/css/bulma.min.css">
+</head>
+
+<body>
+    <section class="hero is-link">
+        <div class="hero-body">
+            <h1 class="title">TP2</h1>
+            <h2 class="subtitle">Création d'un nouvel article</h2>
+        </div>
+        <div class="hero-foot">
+            <nav class="tabs is-boxed is-fullwidth">
+                <div class="container">
+                    <ul>
+                        <li>
+                            <a href="../../tp3/exercice2/liste_article.html">Liste des articles</a>
+                        </li>
+                        <li>
+                            <a href="../../tp3/exercice2/list_type_article.html">Liste des catégories d'article</a>
+                        </li>
+                        <li class="is-active">
+                            <a href="../../tp2/exercice3/form_article.html">Créer un article</a>
+                        </li>
+                        <li>
+                            <a href="../../tp2/exercice3/form_type_article.html">Créer une catégorie d'article</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </section>
+    <div class="container">
+        <div class="section">
+            <div class="box">
+                <form action="form_article.html" method="GET">
+                    <fieldset>
+                        <input type="hidden" name="id">
+                        <div class="field">
+                            <label class="label" for="nom">Nom :</label>
+                            <div class="control">
+                                <input class="input" required type="text" name="nom" id="nom"
+                                    placeholder="Nom de l'article">
+                            </div>
+                        </div>
+                        <br>
+                        <div class="field">
+                            <label class="label" for="type_article_id">Choisissez un type d'article :</label>
+                            <div class="control">
+                                <div class="select">
+                                    <select required name="type_article_id" id="type_article_id">
+                                        <option value="">Choisissez un type d'article</option>
+                                        <option value="1">Type 1</option>
+                                        <option value="2">Type 2</option>
+                                        <option value="3">Type 3</option>
+                                        <option value="4">Type 4</option>
+                                        <option value="5">Type 5</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="field">
+                            <label class="label" for="prix">Prix :</label>
+                            <div class="control">
+                                <input class="input" type="number" name="prix" id="prix"
+                                    placeholder="Prix de l'article">
+                            </div>
+                        </div>
+                        <div class="field">
+                            <label class="label" for="stock">Stock :</label>
+                            <div class="control">
+                                <input class="input" type="number" name="stock" id="stock"
+                                    placeholder="Quantité en stock">
+                            </div>
+                        </div>
+                        <div class="field">
+                            <label class="label" for="description">Description :</label>
+                            <div class="control">
+                                <textarea class="textarea" name="description" id="description"
+                                    placeholder="Description de l'article"></textarea>
+                            </div>
+                        </div>
+                        <div class="field">
+                            <label class="label" for="image">Image :</label>
+                            <div class="control">
+                                <input class="input" type="text" name="image" id="image"
+                                    placeholder="Image de l'article">
+                            </div>
+                        </div>
+                        <div class="field is-grouped">
+                            <div class="control">
+                                <button class="button is-link" type="submit">Valider</button>
+                            </div>
+                        </div>
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

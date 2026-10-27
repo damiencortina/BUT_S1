@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TP3 : Liste des articles</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.4/css/bulma.min.css">
+</head>
+
+<body>
+    <section class="hero is-link">
+        <div class="hero-body">
+            <h1 class="title">TP3</h1>
+            <h2 class="subtitle">Liste des articles</h2>
+        </div>
+        <div class="hero-foot">
+            <nav class="tabs is-boxed is-fullwidth">
+                <div class="container">
+                    <ul>
+                        <li class="is-active">
+                            <a href="./liste_article.html">Liste des articles</a>
+                        </li>
+                        <li>
+                            <a href="./list_type_article.html">Liste des catégories d'article</a>
+                        </li>
+                        <li>
+                            <a href="../../tp2/exercice3/form_article.html">Créer un article</a>
+                        </li>
+                        <li>
+                            <a href="../../tp2/exercice3/form_type_article.html">Créer une catégorie d'article</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </section>
+    <div class="container">
+        <div class="section">
+            <div class="box">
+                <div class="buttons">
+                    <button class="button is-primary is-outlined">Ajouter un article</button>
+                </div>
+                <table class="table is-fullwidth">
+                    <thead>
+                        <tr>
+                            <th><abbr title="Identifiant">ID</abbr></th>
+                            <th>Nom</th>
+                            <th>Type</th>
+                            <th>Prix</th>
+                            <th>Stock</th>
+                            <th>Description</th>
+                            <th>Image</th>
+                            <th>Opérations</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th>1</th>
+                            <td>Enveloppes (50p)</td>
+                            <td class="has-text-danger">1</td>
+                            <td>2</td>
+                            <td>1</td>
+                            <td></td>
+                            <td></td>
+                            <td class="buttons"><button class="button is-warning is-outlined">Editer</button><button
+                                    class="button is-danger is-outlined">Supprimer</button></td>
+                        </tr>
+                        <tr>
+                            <th>2</th>
+                            <td>Stylo noir</td>
+                            <td class="has-text-danger">1</td>
+                            <td>1</td>
+                            <td>10</td>
+                            <td></td>
+                            <td></td>
+                            <td class="buttons"><button class="button is-warning is-outlined">Editer</button><button
+                                    class="button is-danger is-outlined">Supprimer</button></td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <th><abbr title="Identifiant">ID</abbr></th>
+                            <th>Nom</th>
+                            <th>Type</th>
+                            <th>Prix</th>
+                            <th>Stock</th>
+                            <th>Description</th>
+                            <th>Image</th>
+                            <th>Opérations</th>
+                        </tr>
+                    </tfoot>
+                </table>
+            </div>
+        </div>
+    </div>
+</body>

@@ -1,0 +1,98 @@
+body{
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: #485460;
+    color: white;
+    padding: 0 15px;
+}
+
+header,
+header ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+ul li {
+    display: block;
+    padding: 10px;
+}
+
+ul a {
+    color: white;
+}
+
+section:nth-child(2) img {
+    position: absolute;
+    right: 10px;
+    top: 5%;
+    max-height: 90%;
+}
+
+section {
+    position: relative;
+    margin: 15px;
+    padding: 10px;
+    background-color: #e6eaef;
+}
+
+table {
+    width: 100%;
+}
+
+table tr {
+    display: flex;
+    justify-content: center;
+}
+
+table tr td {
+    padding: 25px;
+    margin: 5px;
+    font-weight: bold;
+}
+
+table tr:nth-child(1) td:nth-child(1) {
+  background-color: #0fbcf9;
+}
+
+table tr:nth-child(1) td:nth-child(2) {
+  background-color: #0be881;
+}
+
+table tr:nth-child(1) td:nth-child(3) {
+  background-color: #ffc048;
+}
+
+table tr:nth-child(2) td:nth-child(1) {
+  background-color: #ff5e57;
+}
+
+table tr:nth-child(2) td:nth-child(2) {
+  background-color: #ef5777;
+}
+
+table tr:nth-child(2) td:nth-child(3) {
+  background-color: #575fcf;
+}
+
+section:nth-child(4){
+    display: flex;
+    justify-content: center;
+}
+
+section:nth-child(4) span{
+    background-color: #b4e1b4;
+    color:black;
+}
+
+section:nth-child(4) > span, section:nth-child(4) > div{
+    padding: 5px;
+}
+
+footer{
+    background-color: #485460;
+    text-align: center;
+    color: white;
+    padding: 25px 0 100px;
+}

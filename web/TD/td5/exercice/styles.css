@@ -1,0 +1,176 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    --primary: #8300f1;
+    --grey: #f5f7ff;
+    --border-color: #dadadb;
+    --white: white
+}
+
+body {
+    background-color: var(--grey);
+}
+
+/** Header **/
+header {
+    display: flex;
+    background-color: var(--white);
+    width: 75%;
+    margin: auto;
+    padding: 0 10px;
+    border-radius: 5px;
+    margin-top: 25px;
+}
+
+header div {
+    flex-grow: 1;
+    text-align: center;
+    padding: 10px 10px;
+}
+
+header input {
+    display: none;
+}
+
+header label {
+    background-color: var(--grey);
+    color: black;
+    padding: 10px;
+    display: block;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color .25s, color .25s;
+    cursor: pointer;
+}
+
+header label:hover {
+    background-color: var(--primary);
+    color: var(--white);
+}
+
+
+/** Content **/
+h2 {
+    margin: 20px 0 5px 0;
+    font-size: 1.05em;
+}
+
+#content {
+    display: flex;
+    padding: 50px;
+}
+
+section {
+    background-color: var(--white);
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px;
+    flex-grow: 1;
+}
+
+.half-line {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.half-line div {
+    flex-grow: 1;
+}
+
+input[type=text], input[type=email] {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px;
+    border: 1px solid var(--border-color);
+    border-radius: 5px;
+}
+
+button {
+    all: unset;
+    background-color: var(--primary);
+    color: var(--white);
+    padding: 10px;
+    border: unset;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+/** File upload **/
+
+#upload-files {
+    display: none;
+}
+
+.file-upload {
+    display: block;
+    border: 1px dashed var(--border-color);
+    height: 100px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+.file-upload span {
+    font-weight: bold;
+    display: block;
+    margin: 0 auto;
+}
+
+/** Text Area **/
+
+textarea {
+    padding: 10px;
+    border: 1px solid var(--border-color);
+    border-radius: 5px;
+    width: 100%;
+    box-sizing: border-box;
+    height: 150px;
+}
+
+/** File **/
+
+.file {
+    background-color: var(--grey);
+    border-radius: 5px;
+    margin-top: 10px;
+    padding: 5px 10px;
+    font-weight: bold;
+}
+
+.file div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.file div span {
+    display: block;
+}
+
+/* Porgress bars */
+progress {
+    height: 10px;
+    border: unset;
+    width: 100%;
+    height: 5px;
+}
+
+progress::-webkit-progress-value {
+    background-color: var(--primary);
+}
+
+progress::-moz-progress-bar {
+    background-color: var(--primary);
+}
+
+/** Checkbox **/
+#content section:nth-child(1) .line:nth-last-child(2) {
+    display: flex;
+    align-items: baseline;
+}

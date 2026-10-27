@@ -1,0 +1,64 @@
+@keyframes rotating {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes zoom {
+    from {
+        transform: scale(1)
+    }
+
+    to {
+        transform: scale(2)
+    }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    width: 100px;
+    animation: rotating 2s linear infinite, zoom 1s linear infinite;
+    color: red;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+header *,
+footer * {
+    color: white;
+    margin-top: 5px;
+}
+
+header>span {
+    float: left;
+    margin-top: 5px;
+    background-color: unset;
+    padding: unset;
+}
+
+header>nav {
+    float: right;
+}
+
+section{
+    background-color: #cccccc;
+    padding: 20px;
+    margin: 30px;
+}
+
+#first_section{
+    background-color: #cccccc;
+}

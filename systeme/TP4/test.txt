@@ -1,0 +1,172 @@
+awstats - powerful and featureful web server log analyzer
+libboost-context1.83.0 - provides a sort of cooperative multitasking on a single thread
+libsyntax-keyword-try-perl - try/catch/finally syntax for perl
+libxs-parse-keyword-perl - XS functions to assist in parsing keyword syntax
+libxs-parse-sublike-perl - XS functions to assist in parsing sub-like syntax
+ruby-ruby2-keywords - source-level compatibility library between ruby2.7 and ruby3
+acpica-tools - ACPICA tools for the development and debug of ACPI tables
+apt-xapian-index - maintenance and search tools for a Xapian index of Debian packages
+astropy-utils - Command line tools from astropy
+cgvg - command-line source browsing tool
+claws-mail-keyword-warner - Warning on message keywords for Claws Mail
+cloud-enum - Multi-cloud open source intelligence tool
+convmv - filename encoding conversion tool
+cookietool - suite of programs to help maintain a fortune database
+ddgr - DuckDuckGo from the terminal
+develock-el - additional font-lock keywords for the developers on Emacs
+digikam - digital photo management application for KDE
+elpa-erc - Powerful, modular, and extensible IRC client for Emacs
+elpa-find-file-in-project - quick access to project files in Emacs
+elpa-gitlab-ci-mode - Emacs mode for editing GitLab CI files
+elpa-helm-org - Emacs Helm for Org-mode headlines and keywords completion
+elpa-hl-todo - highlight TODO and similar keywords in comments and strings
+elpa-magit-todos - show source file TODOs in Magit
+elpa-php-mode - PHP Mode for GNU Emacs
+elpa-use-package-chords - key-chord keyword for use-package
+elpa-use-package-ensure-system-package - autoinstall system packages
+embassy-domsearch - Extra EMBOSS commands to search for protein domains
+fuzzyocr - spamassassin plugin to check image attachments
+gdl-mpfit - Robust non-linear least squares curve fitting for GDL
+geany-plugin-doc - documentation plugin for Geany
+googler - Power tool to Google (Web & News) and Google Site Search from the terminal
+htdig - web search and indexing system - binaries
+iraf-wcstools - Handle the WCS of a FITS image (IRAF package)
+irssi-scripts - collection of scripts for irssi
+kbibtex - BibTeX editor for KDE
+kbibtex-data - BibTeX editor for KDE -- common data
+kde-zeroconf - zeroconf plugins and kio slaves for KDE
+kphotoalbum - tool for indexing, searching and viewing images by keywords for KDE
+lhs2tex - Generates LaTeX code from literate Haskell sources
+libauto64fto32f-java - minimalist library for converting double numerical Java code into float
+libautobox-core-perl - module providing automatic methods for core functions
+libautobox-junctions-perl - module providing autoboxified junction-style operators
+libb-keywords-perl - lists of internal perl keywords
+libboost-context-dev - provides a sort of cooperative multitasking on a single thread (default version)
+libboost-context1.74-dev - provides a sort of cooperative multitasking on a single thread
+libboost-context1.74.0 - provides a sort of cooperative multitasking on a single thread
+libboost-context1.83-dev - provides a sort of cooperative multitasking on a single thread
+libccp4-data - CCP4 core functionality - common files
+libccp4-dev - CCP4 core functionality - development files
+libccp4c0t64 - CCP4 core functionality - C runtime
+libccp4f0 - CCP4 core functionality - fortran runtime
+libclass-tiny-antlers-perl - Moose-like sugar for Class::Tiny
+libcpl-dev - ESO library for automated astronomical data-reduction
+libdancer-plugin-database-perl - Dancer plugin providing easy database connections
+libdancer2-plugin-ajax-perl - Dancer2 plugin for adding Ajax route handlers
+libdancer2-plugin-database-perl - module for easy database connections for Dancer2 applications
+libdata-table-perl - module to manipulate data tables in perl (as in R)
+libdeclare-constraints-simple-perl - module for declarative validation of data structures
+libdevel-callparser-perl - custom parsing attached to subroutines
+libdevel-declare-perl - module to add new syntax to Perl
+libexception-class-trycatch-perl - syntactic try/catch sugar for use with Exception::Class
+libexporter-renaming-perl - facility to rename symbols when imported
+libfdf-dev - SIESTA Flexible Data Format library (development files)
+libfeature-compat-class-perl - make class syntax available
+libfeature-compat-try-perl - make try/catch syntax available
+libfunction-parameters-perl - module for subroutine definitions with parameter lists
+libfuture-asyncawait-perl - deferred subroutine syntax for futures
+libghc-sql-words-dev - SQL keywords data constructor into OverloadedString
+libghc-sql-words-doc - SQL keywords data constructor into OverloadedString; documentation
+libghc-sql-words-prof - SQL keywords data constructor into OverloadedString; profiling libraries
+libguard-perl - Perl module providing safe cleanup using guard objects
+libjs-emojify - JavaScript library converting Emoji keywords to images
+libkeyword-simple-perl - Perl module to define new keywords in pure Perl
+liblexical-failure-perl - Perl module for user-selectable lexically-scoped failure signaling
+liblexical-underscore-perl - access your caller's lexical underscore
+liblingua-stopwords-perl - module with stop words for several languages
+liblist-keywords-perl - selection of list utility keywords
+libmethod-signatures-perl - method and function declarations with signatures and no source filter
+libmicroba-java - set of JFC (Swing) components
+libmicroba-java-doc - Documentation for libmicroba-java
+libmoosex-declare-perl - Moose extension providing a declarative syntax
+libmoosex-method-signatures-perl - Moose extension for method declarations with type constraints
+libmoosex-poe-perl - Moose wrapper around a POE::Session
+libmoosex-role-parameterized-perl - Moose extension providing parameterized roles
+libmoox-struct-perl - simple lightweight record-like structures making sounds like cows
+libobject-result-perl - module allowing subs to build and return objects on-the-fly
+libperl-prereqscanner-perl - module for extracting prerequisites from Perl code
+libperl6-form-perl - Perl 5 implementation of the Perl 6 'form' built-in
+libperldoc-search-perl - Index and Search local Perl Documentation
+libperlude-perl - shell and powershell pipes, haskell keywords mixed with the awesomeness of perl
+libperlx-assert-perl - yet another assertion keyword
+libqfits0 - Library offering easy access to FITS files
+librudecgi-dev - C++ parser library for CGI applications - development libraries
+librudecgi5v5 - C++ parser library for CGI applications - runtime
+librunning-commentary-perl - Perl module to call system() with tracking messages
+librust-fasteval-dev - Fast evaluation of algebraic expressions - Rust source code
+librust-proc-macro-crate-1-dev - Replacement for crate (macro_rules keyword) in proc-macros - Rust source code
+librust-proc-macro-crate-dev - Replacement for crate (macro_rules keyword) in proc-macros - Rust source code
+libscalar-list-utils-perl - modules providing common scalar and list utility subroutines
+libsoftware-licensemoreutils-perl - More utilities and a summary for Software::License
+libstruct-dumb-perl - module to create simple lightweight record-like structures
+libsub-wrappackages-perl - module to wrap subroutines in packages
+libsyntax-keyword-dynamically-perl - module to dynamically change the value of a variable
+libsyntax-keyword-gather-perl - syntax extension for the "gather" keyword
+libsyntax-keyword-junction-perl - Perl6 style Junction operators in Perl5
+libsyntax-keyword-match-perl - match/case syntax plugin for perl
+libsyntax-keyword-multisub-perl - multiple subroutine dispatch syntax extension
+libsyntax-perl - pragma for activating syntax extensions
+libtest-mockdatetime-perl - module to mock DateTime->now calls during tests
+libtext-context-eitherside-perl - Perl module to get context around a keyword
+libverilog-perl - framework providing Verilog support
+libwcstools-dev - Handle the WCS of a FITS image (development files)
+libwcstools1t64 - Handle the WCS of a FITS image (shared library)
+matomo-searchengine-and-social-list - Search engine and social network definitions used by Matomo (formerly Piwik)
+mew - mail reader supporting PGP/MIME for Emacs
+mew-beta - mail reader supporting PGP/MIME for Emacs (development version)
+minitube - Native YouTube client
+missfits - Basic maintenance and packaging tasks on FITS files
+nama - Ecasound-based multitrack recorder/mixer
+node-ajv-keywords - Custom JSON-Schema keywords for Ajv validator
+node-color-convert - Plain color conversion functions
+node-colormin - Turn a CSS color into its smallest representation
+node-hoist-non-react-statics - ReactJS module to copy statics from a child to a parent
+node-json-schema-merge-allof - Node.js module to merge schemas combined using allOf
+nowhere - Translates programs from an extended Standard ML to Standard ML
+pdfproctools - PDF Processing Tools
+perlindex - Perl manual pages index and query application
+perltidier - tweaks to Perl::Tidy to support some syntactic sugar
+pgformatter - PostgreSQL SQL syntax beautifier
+python-django-classy-tags-doc - Class based template tags for Django projects (Documentation)
+python-multipledispatch-doc - documentation for multipledispatch
+python-pytest-doc - Simple, powerful testing in Python - Documentation
+python-pytest-xprocess-doc - pytest plugin for managing processes across test runs - doc
+python3-acora - fast multi-keyword text search engine (Python 3)
+python3-bottle-sqlite - SQLite3 integration for Bottle - Python 3.x
+python3-django-cache-memoize - Django utility for a memoization decorator
+python3-django-classy-tags - Class based template tags for Django projects (Python3 version)
+python3-doxypypy - More Pythonic version of doxypy, a Doxygen filter for Python
+python3-frozendict - immutable dictionary - Python 3.x
+python3-grequests - asynchronous Web Scraping With Python (Python 3)
+python3-immutabledict - immutable wrapper around dictionaries (fork of frozendict)
+python3-injector - Python dependency injection framework
+python3-jsonrpclib-pelix - Implementation of the JSON-RPC v2.0 specification (Python 3)
+python3-ml-collections - collections designed for ML usecases
+python3-multipledispatch - multiple dispatch in Python
+python3-pafy - Download videos and retrieve metadata from YouTube
+python3-paypal - PayPal API implementation (Python 3)
+python3-pykcs11 - PKCS#11 wrapper for Python
+python3-pytest - Simple, powerful testing in Python3
+python3-pytest-xprocess - pytest plugin for managing processes across test runs
+python3-referencing - Implementation-agnostic implementation of JSON reference resolution
+python3-textual - TUI (Text User Interface) framework for Python inspired by modern web development
+python3-wither - XML/HTML Generation DSL (Python 3)
+ruby-acts-as-taggable-on - provides advanced tagging for Rails
+ruby-forwardable-extended - Forwardable with hash and instance variable extensions
+ruby-jaeger-client - OpenTracing Tracer implementation for Jaeger
+ruby-numru-misc - Miscellaneous functions and classes to help Ruby programming
+search-ccsb - BibTeX search tool
+search-citeseer - BibTeX search tool
+tailspin - log file highlighter
+texlive-latex-extra - TeX Live: LaTeX additional packages
+texlive-science - TeX Live: Mathematics, natural sciences, computer science packages
+tryton-modules-product-price-list-parent - Tryton application platform - product price list parent module
+tryton-modules-web-shortener - Tryton application platform - web shortener module
+turbosearch - wordlist url search tool
+vim-syntax-gtk - Syntax files to highlight GTK+ keywords in vim
+wcstools - Handle the WCS of a FITS image
+webext-form-history-control - extension to manage form history
+yokadi - commandline todo system
+kcemu - KC 85/4 emulator
+kcemu-common - KC 85/4 emulator - common files
+vice - Versatile Commodore Emulator

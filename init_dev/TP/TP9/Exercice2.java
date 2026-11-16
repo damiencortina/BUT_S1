@@ -16,9 +16,19 @@ public class Exercice2 {
         }
     }
 
-    public static void studyIPv4(String IPv4, int mask) {
+    public static String getHostAddress(String IPv4, int mask) {
         String binaryIPv4 = Exercice2.convertIPV4ToBinary(IPv4);
-        String hostAddress = binaryIPv4.substring(mask, 12 * 4 - mask);
+        return binaryIPv4.substring(mask, binaryIPv4.length()-1);
+    }
+
+    public static String getHostAddress2(String IPv4, int mask) {
+        String binaryIPv4 = Exercice2.convertIPV4ToBinary(IPv4);
+        return binaryIPv4.substring(binaryIPv4.length()-1-mask);
+    }
+
+    public static void studyIPv4(String IPv4, int mask) {
+        String hostAddress = Exercice2.getHostAddress(IPv4, mask);
+        System.out.println(hostAddress);
         Character firstBit = hostAddress.charAt(0);
         boolean bitsAreIdentical = true;
         for (int i = 1; i < hostAddress.length(); i++) {
@@ -61,58 +71,10 @@ public class Exercice2 {
             num/=2;
             bin = bit + bin;
         }
-        return bin;
-    }
-
-    public static String convertHexToBinary(String hex) {
-        System.out.println(hex);
-        Character[] characterArray = new Character[] {
-                '0',
-                '1',
-                '2',
-                '3',
-                '4',
-                '5',
-                '6',
-                '7',
-                '8',
-                '9',
-                'A',
-                'B',
-                'C',
-                'D',
-                'E',
-                'F'
-        };
-        String[] binaryArray = new String[] {
-                "0000",
-                "0001",
-                "0010",
-                "0011",
-                "0100",
-                "0101",
-                "0110",
-                "0111",
-                "1000",
-                "1001",
-                "1010",
-                "1011",
-                "1100",
-                "1101",
-                "1110",
-                "1111"
-        };
-        String binary = "";
-        for (int i = 0; i < hex.length(); i++) {
-            for (int j = 0; j < characterArray.length; j++) {
-                if (characterArray[j] == hex.charAt(i)) {
-                    binary = binary + binaryArray[j];
-                }
-            }
-            System.out.println(binary);
+        while(bin.length() < 8){
+            bin = 0 + bin;
         }
-        return binary;
-
+        return bin;
     }
 
 }

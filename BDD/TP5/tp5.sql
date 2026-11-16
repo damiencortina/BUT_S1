@@ -1,3 +1,5 @@
+USE BDD_dcortina;
+
 -- Remarque
 -- Les opérateurs de comparaison =   <=   <>…
 -- Les opérateurs logiques AND   OR   NOT (expressions)
@@ -77,3 +79,145 @@ WHERE Etudiant.groupe_id = 1 AND Etudiant.ville = 'Belfort';
 SELECT Etudiant.nom, Etudiant.groupe_id, Etudiant.boursier
 FROM Etudiant
 WHERE Etudiant.groupe_id = 1 AND Etudiant.semestre_id = 1 AND Etudiant.boursier = 'O';
+
+-- 2.3 Requête 2 (expression logique et tri su plusieurs colonnes) :
+
+-- Requète 2-1 à tester
+
+SELECT Etudiant.semestre_id, Etudiant.groupe_id, Etudiant.nom
+FROM Etudiant
+ORDER BY semestre_id, groupe_id, nom DESC;
+
+-- Requète 2-2 à tester
+
+SELECT nom,ville
+FROM Etudiant
+WHERE groupe_id=2
+ORDER BY ville DESC, nom;
+
+-- Requète 2-3
+
+SELECT nom, groupe_id, ville, semestre_id
+FROM Etudiant
+WHERE groupe_id=1 AND (semestre_id=1 OR semestre_id=2) AND ville='Belfort'
+ORDER BY semestre_id, groupe_id, ville, nom;
+
+-- Requète 2-4
+
+SELECT nom, groupe_id, semestre_id, ville, code_postal
+FROM Etudiant
+WHERE semestre_id  <> 2  AND code_postal BETWEEN  90000 AND 90999
+AND ville NOT IN ('Belfort', '') AND ville IS NOT NULL
+ORDER BY semestre_id, groupe_id, ville, nom;
+
+-- Requète 2-5
+
+SELECT nom, groupe_id, ville, semestre_id, boursier
+FROM Etudiant
+WHERE (boursier = 'O' OR ville='BELFORT') AND semestre_id=2
+ORDER BY groupe_id, ville, nom;
+
+-- Requète 3-1
+-- Le distinct permet de sélectionner les valeurs distinctes
+SELECT DISTINCT code_postal, ville
+FROM Etudiant;
+
+SELECT code_postal, ville
+FROM Etudiant;
+
+-- Requète 3-2
+
+SELECT DISTINCT ville
+FROM Etudiant
+WHERE SUBSTRING (code_postal, 1, 2) = 90 AND ville IS NOT NULL AND ville <>'';
+
+-- OU
+
+SELECT DISTINCT ville
+FROM Etudiant
+WHERE code_postal LIKE '90%' AND ville IS NOT NULL AND ville <>'';
+
+-- Requète 4
+
+SELECT nom, ville
+FROM Etudiant
+WHERE ville IN ('Strasbourg','Mulhouse','Cernay');
+
+-- Requète 5.1
+
+SELECT nom, sexe
+FROM Etudiant
+WHERE ville IS NULL AND sexe ='H';
+
+-- Requète 5.2
+
+SELECT nom, ville
+FROM Etudiant
+WHERE (ville IS NULL OR ville ='') AND sexe ='H';
+
+-- Requète 6.1
+
+SELECT nom, ville
+FROM Etudiant
+WHERE (nom LIKE 'B%' or nom LIKE 'D%') AND ville LIKE '%o%'
+ORDER BY nom;
+
+-- Requète 6.2
+
+SELECT nom, ville, adresse
+FROM Etudiant
+WHERE adresse LIKE '%verger%' AND (ville LIKE '%er%' OR ville LIKE '%a%l');
+
+SELECT nom, ville, adresse
+FROM Etudiant
+WHERE adresse LIKE '%verger%' AND (ville LIKE '%er%' OR ville LIKE '%a%l%');
+
+-- Requète 7
+
+INSERT INTO Etudiant(nom, adresse, ville, code_postal, date_naissance) VALUES('TINTIN', '8 rue Moulinsart', 'cheverny', '41700', '2010-03-30');
+
+SELECT * FROM Etudiant WHERE nom = 'TINTIN';
+
+UPDATE Etudiant SET groupe_id=1, semestre_id=3, note_ue1=14, note_ue2=15
+WHERE nom='TINTIN';
+
+SELECT * FROM Etudiant WHERE nom = 'TINTIN';
+
+DELETE FROM Etudiant WHERE nom='TINTIN';
+
+-- Requète 8
+
+SELECT nom, date_naissance
+FROM Etudiant
+WHERE date_naissance  BETWEEN '2006-1-1' AND '2006-12-31'
+AND sexe =  'H'
+AND code_postal IN('90000','25200')
+ORDER BY date_naissance;
+
+SELECT nom, date_naissance
+FROM Etudiant
+WHERE date_naissance LIKE '2006%'
+AND sexe =  'H'
+AND code_postal IN('90000','25200')
+ORDER BY date_naissance;
+
+-- Requète 9.1
+
+SELECT nom
+FROM Etudiant
+ORDER BY nom
+LIMIT 5,10 ;
+
+-- Requète 9.2
+
+SELECT nom, groupe_id
+FROM Etudiant
+ORDER BY groupe_id DESC, nom
+LIMIT  6;
+
+-- Requète 9.3
+
+SELECT nom, groupe_id
+FROM Etudiant
+ORDER BY groupe_id DESC, nom
+LIMIT  4  OFFSET 6;

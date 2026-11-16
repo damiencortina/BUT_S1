@@ -29,9 +29,9 @@
         <select class="form-select" id="groupe" name="id_groupe">
             {% for groupe in groupes %}
             {% if loop.first %}
-            <option value="{{groupe.name}}" selected>{{groupe.name}}</option>
+            <option value="{{groupe.id}}" selected>{{groupe.name}}</option>
             {%else%}
-            <option value="{{groupe.name}}">{{groupe.name}}</option>
+            <option value="{{groupe.id}}">{{groupe.name}}</option>
             {%endif%}
             {% endfor %}
         </select>
